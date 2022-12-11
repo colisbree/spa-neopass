@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.plus-button{
+  @apply flex;
+  @apply items-center;
+  @apply justify-center;
+  @apply flex-none;
+  @apply rounded-full;
+  @apply border;
+  @apply border-teal-600;
+  @apply h-8;
+  @apply w-8;
+  @apply bg-teal-300;
+  @apply text-teal-600;
+  @apply border-opacity-25;
+}
+
+.minus-button{
+  @apply flex;
+  @apply items-center;
+  @apply justify-center;
+  @apply flex-none;
+  @apply rounded-full;
+  @apply border;
+  @apply border-pink-600;
+  @apply h-8;
+  @apply w-8;
+  @apply bg-pink-300;
+  @apply text-pink-600;
+  @apply border-opacity-25;
+}
+
+
+body{
+  margin:0px;
+  padding:0px;
+  width:100%;
+}
+
+.couleur-bleue {
+  color: #3524c8;
+}
+
+.couleur-rose {
+  color: #ff1c80;
+}
+
+.blink-soft {
+  animation: blinker 2s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    color:white;
+  }
+}
